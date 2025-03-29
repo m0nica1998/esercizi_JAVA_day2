@@ -20,6 +20,53 @@ public class main {
 	//alla fine del metodo main chiamare il metodo dello scanner .close()
 	scan.close();
 	
+	//creare un programma che, tramite lo scanner 
+	
+	//prenda in input 2 int e stampi la somma 
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Inserisci un intero");
+	int var1 = sc.nextInt();
+	System.out.println("Inserisci un altro intero");
+	int var2 = sc.nextInt();
+	int somma = var1 + var2;
+	System.out.println("la somma dei due numeri è: " + somma);
+	sc.close();
+	
+	//prenda in input 3 char e stampi concatenandoli con + 
+	Scanner scan1 = new Scanner(System.in);
+	System.out.println("inserisci un carattere");
+	char a = scan1.next().charAt(0);
+	System.out.println("inserisci un carattere");
+	char b = scan1.next().charAt(0);
+	System.out.println("inserisci un carattere");
+	char c = scan1.next().charAt(0);
+	System.out.println("la concatenazione dei caratteri è: " + a + b + c);
+	scan1.close();
+	//prenda in input due double e stampi la divisione 
+	Scanner scan2 = new Scanner(System.in);
+	System.out.println("inserisci un double");
+	double d1 = scan2.nextDouble();
+	System.out.println("inserisci un altro double");
+	double d2 = scan2.nextDouble();
+	double div = d1 / d2;
+	System.out.println("la divisione dei due double è: " + div);
+	scan2.close();
+	
+	//prenda in input un nome, un cognome, un’età, il nome di un corso e stampi “Ciao mi chiamo [nome] [cognome], ho [età] anni e sto frequentando il corso di [nome corso]
+	
+	Scanner scan3 = new Scanner(System.in);
+	System.out.println("inserisci un nome");
+	String nome = scan3.nextLine();
+	System.out.println("inserisci un cognome");
+	String cognome = scan3.nextLine();
+	System.out.println("inserisci un'età");
+	int eta = scan3.nextInt();
+	System.out.println("inserisci il nome di un corso");
+	String corso = scan3.nextLine();
+	System.out.println("Ciao mi chiamo " + nome + cognome + ", ho " + eta + " anni e sto frequentando il corso di" + corso);
+	scan3.close();
+	
+	
 	
 	}
 }
