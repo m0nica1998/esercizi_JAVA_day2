@@ -1,2 +1,2 @@
-# esercizi_JAVA_day2
+Esercizi con lo scanner
 
